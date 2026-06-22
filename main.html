@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Встречи команды | Инго Банк</title>
+
+    <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* =========================
+   БАЗОВЫЕ НАСТРОЙКИ
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: "Segoe UI", sans-serif;
+    background:#f6f7fb;
+    color:#1c2333;
+    line-height:1.6;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header{
+
+    position:sticky;
+    top:0;
+
+    z-index:1000;
+
+    background:white;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 7%;
+
+    border-bottom:1px solid #e5e7eb;
+
+    box-shadow:0 2px 12px rgba(0,0,0,0.04);
+}
+
+.logo{
+
+    font-size:24px;
+    font-weight:700;
+
+    color:#E30613;
+}
+
+.nav{
+
+    display:flex;
+    gap:35px;
+}
+
+.nav-link{
+
+    text-decoration:none;
+
+    color:#333;
+
+    font-weight:500;
+
+    transition:all 0.25s ease;
+}
+
+.nav-link:hover{
+
+    color:#E30613;
+
+    transform:scale(1.08);
+}
+
+.active{
+
+    color:#E30613;
+}
+
+.profile-btn{
+
+    padding:12px 20px;
+
+    border-radius:30px;
+
+    border:1px solid #ddd;
+
+    background:white;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.profile-btn:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+
+    max-width:1400px;
+
+    margin:50px auto;
+
+    padding:50px;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+
+    gap:50px;
+
+    background:white;
+
+    border-radius:30px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+
+.hero-content{
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.hero h1{
+
+    font-size:64px;
+
+    margin-bottom:20px;
+}
+
+.hero-subtitle{
+
+    font-size:24px;
+
+    font-weight:600;
+
+    margin-bottom:20px;
+}
+
+.hero-description{
+
+    color:#667085;
+
+    margin-bottom:35px;
+}
+
+.hero-button{
+
+    width:fit-content;
+
+    text-decoration:none;
+
+    background:#E30613;
+
+    color:white;
+
+    padding:16px 32px;
+
+    border-radius:15px;
+
+    transition:0.3s;
+}
+
+.hero-button:hover{
+
+    transform:translateY(-2px);
+
+    background:#c0000f;
+}
+
+.hero-image img{
+
+    width:100%;
+
+    border-radius:20px;
+
+    object-fit:cover;
+}
+
+
+/* =========================
+   СЕКЦИИ
+========================= */
+
+.meeting-section,
+.benefits{
+
+    max-width:1400px;
+
+    margin:40px auto;
+
+    padding:50px;
+
+    background:white;
+
+    border-radius:30px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+
+.meeting-section h2,
+.benefits h2{
+
+    margin-bottom:35px;
+
+    font-size:38px;
+}
+
+
+/* =========================
+   КАРТОЧКИ ВСТРЕЧ
+========================= */
+
+.meeting-slider{
+
+    display:flex;
+
+    gap:25px;
+
+    overflow-x:auto;
+
+    scroll-behavior:smooth;
+
+    padding-bottom:10px;
+}
+
+.meeting-slider::-webkit-scrollbar{
+
+    height:8px;
+}
+
+.meeting-slider::-webkit-scrollbar-thumb{
+
+    background:#E30613;
+
+    border-radius:20px;
+}
+
+.meeting-card{
+
+    min-width:350px;
+
+    background:white;
+
+    border:1px solid #ececec;
+
+    border-radius:24px;
+
+    padding:30px;
+
+    flex-shrink:0;
+
+    transition:0.3s;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.04);
+}
+
+.meeting-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.meeting-card h3{
+
+    font-size:28px;
+
+    margin-bottom:15px;
+}
+
+.meeting-card p{
+
+    margin-bottom:15px;
+}
+
+.meeting-card ul{
+
+    margin-bottom:25px;
+
+    padding-left:18px;
+}
+
+.meeting-card li{
+
+    margin-bottom:10px;
+}
+
+.card-button{
+
+    display:inline-block;
+
+    text-decoration:none;
+
+    color:white;
+
+    background:#E30613;
+
+    padding:14px 22px;
+
+    border-radius:12px;
+
+    transition:0.3s;
+}
+
+.card-button:hover{
+
+    background:#c0000f;
+}
+
+
+/* =========================
+   ПРЕИМУЩЕСТВА
+========================= */
+
+.benefits-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+}
+
+.benefit-card{
+
+    background:#fafafa;
+
+    border:1px solid #ececec;
+
+    border-radius:20px;
+
+    padding:25px;
+}
+
+.benefit-card h3{
+
+    margin-bottom:12px;
+
+    font-size:20px;
+}
+
+.benefit-card p{
+
+    color:#667085;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+
+    text-align:center;
+
+    padding:40px;
+
+    color:#667085;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media(max-width:1024px){
+
+    .hero{
+
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{
+
+        font-size:48px;
+    }
+
+    .benefits-grid{
+
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+    .header{flex-wrap:wrap; gap:20px;}
+
+    .nav {width:100%;
+        overflow-x:auto;
+        justify-content:flex-start;
+        padding-bottom:5px;}
+
+    .hero{padding:30px;}
+
+    .hero h1{font-size:40px;}
+
+    .hero-subtitle{font-size:20px;}
+
+    .meeting-card{ min-width:85%;}
+
+    .benefits-grid{grid-template-columns:1fr;}
+
+    .meeting-section,
+    .benefits{padding:30px;}
+}
+  </style>
+</head>
+
+<body>
+
+    <!-- Шапка -->
+
+    <header class="header">
+
+        <div class="logo">
+            ИНГО БАНК
+        </div>
+
+        <nav class="nav">
+
+            <a href="index.html" class="nav-link active">
+                Главная
+            </a>
+
+            <a href="1-to-1.html" class="nav-link">
+                1-to-1
+            </a>
+
+            <a href="retro.html" class="nav-link">
+                Ретроспектива
+            </a>
+
+            <a href="brainstorm.html" class="nav-link">
+                Брейншторм
+            </a>
+
+        </nav>
+
+        <div class="profile-btn">
+            Мой профиль
+        </div>
+
+    </header>
+
+
+    <!-- Главный экран -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>
+                Встречи команды
+            </h1>
+
+            <p class="hero-subtitle">
+                Пространство для продуктивного диалога,
+                поиска решений и развития команды.
+            </p>
+
+            <p class="hero-description">
+                Регулярные встречи помогают быстрее выявлять
+                проблемы, улучшать взаимодействие внутри команды,
+                находить новые идеи и фиксировать договоренности
+                в едином формате.
+            </p>
+
+            <a href="#meeting-types" class="hero-button">
+                Начать работу
+            </a>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+                alt="Командная работа">
+
+        </div>
+
+    </section>
+
+
+    <!-- Форматы встреч -->
+
+    <section class="meeting-section" id="meeting-types">
+
+        <h2>
+            Выберите формат встречи
+        </h2>
+
+        <div class="meeting-slider">
+
+            <!-- 1-to-1 -->
+
+            <div class="meeting-card">
+
+                <h3>1-to-1</h3>
+
+                <p>
+                    Индивидуальная встреча
+                    руководителя и сотрудника.
+                </p>
+
+                <ul>
+
+                    <li>
+                        Цель: развитие сотрудника
+                    </li>
+
+                    <li>
+                        Формат: 1 на 1
+                    </li>
+
+                    <li>
+                        Длительность: 30–60 минут
+                    </li>
+
+                    <li>
+                        Раз в 2–4 недели
+                    </li>
+
+                </ul>
+
+                <a href="1-to-1.html" class="card-button">
+                    Перейти к формату
+                </a>
+
+            </div>
+
+
+            <!-- Ретроспектива -->
+
+            <div class="meeting-card">
+
+                <h3>Ретроспектива</h3>
+
+                <p>
+                    Анализ завершенного периода работы.
+                </p>
+
+                <ul>
+
+                    <li>
+                        Цель: поиск улучшений
+                    </li>
+
+                    <li>
+                        Формат: команда
+                    </li>
+
+                    <li>
+                        Длительность: 60–90 минут
+                    </li>
+
+                    <li>
+                        После проекта или спринта
+                    </li>
+
+                </ul>
+
+                <a href="retro.html" class="card-button">
+                    Перейти к формату
+                </a>
+
+            </div>
+
+
+            <!-- Брейншторм -->
+
+            <div class="meeting-card">
+
+                <h3>Брейншторм</h3>
+
+                <p>
+                    Генерация идей и поиск решений.
+                </p>
+
+                <ul>
+
+                    <li>
+                        Цель: собрать идеи
+                    </li>
+
+                    <li>
+                        Формат: группа
+                    </li>
+
+                    <li>
+                        Длительность: 30–90 минут
+                    </li>
+
+                    <li>
+                        По необходимости
+                    </li>
+
+                </ul>
+
+                <a href="brainstorm.html" class="card-button">
+                    Перейти к формату
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Преимущества -->
+
+    <section class="benefits">
+
+        <h2>
+            Почему это важно
+        </h2>
+
+        <div class="benefits-grid">
+
+            <div class="benefit-card">
+
+                <h3>
+                    Повышает эффективность
+                </h3>
+
+                <p>
+                    Команда работает согласованнее
+                    и быстрее достигает целей.
+                </p>
+
+            </div>
+
+            <div class="benefit-card">
+
+                <h3>
+                    Помогает видеть проблемы
+                </h3>
+
+                <p>
+                    Позволяет выявлять сложности
+                    до того, как они станут критичными.
+                </p>
+
+            </div>
+
+            <div class="benefit-card">
+
+                <h3>
+                    Улучшает обратную связь
+                </h3>
+
+                <p>
+                    Формирует культуру открытого диалога.
+                </p>
+
+            </div>
+
+            <div class="benefit-card">
+
+                <h3>
+                    Сохраняет договоренности
+                </h3>
+
+                <p>
+                    Все решения фиксируются
+                    в едином формате.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer class="footer">
+
+        © Инго Банк
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
