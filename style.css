@@ -180,7 +180,7 @@ body{
 
     transform:translateY(-2px);
 
-    background:#c0000f;
+    background:#FA843C;
 }
 
 .hero-image img{
@@ -320,7 +320,7 @@ body{
 
 .card-button:hover{
 
-    background:#c0000f;
+    background:#FA843C;
 }
 
 
@@ -454,7 +454,7 @@ body{
 
     display: inline-block;
 
-    background: #ffe5e7;
+    background: #FA843C;
 
     color: #0047BB;
 
@@ -1153,7 +1153,7 @@ body{
 
     padding: 50px;
 
-    background: #fff3f4;
+    background: #0047BB;
 
     border-radius: 30px;
 
