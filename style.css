@@ -50,7 +50,7 @@ body{
     font-size:24px;
     font-weight:700;
 
-    color:#E30613;
+    color:#0047BB;
 }
 
 .nav{
@@ -72,14 +72,14 @@ body{
 
 .nav-link:hover{
 
-    color:#E30613;
+    color:#0047BB;
 
     transform:scale(1.08);
 }
 
 .active{
 
-    color:#E30613;
+    color:#0047BB;
 }
 
 .profile-btn{
@@ -165,7 +165,7 @@ body{
 
     text-decoration:none;
 
-    background:#E30613;
+    background:#0047BB;
 
     color:white;
 
@@ -246,7 +246,7 @@ body{
 
 .meeting-slider::-webkit-scrollbar-thumb{
 
-    background:#E30613;
+    background:#0047BB;
 
     border-radius:20px;
 }
@@ -309,7 +309,7 @@ body{
 
     color:white;
 
-    background:#E30613;
+    background:#0047BB;
 
     padding:14px 22px;
 
@@ -456,7 +456,7 @@ body{
 
     background: #ffe5e7;
 
-    color: #E30613;
+    color: #0047BB;
 
     padding: 10px 18px;
 
@@ -504,9 +504,9 @@ body{
 
     background: white;
 
-    color: #E30613;
+    color: #0047BB;
 
-    border: 1px solid #E30613;
+    border: 1px solid #0047BB;
 
     padding: 16px 30px;
 
@@ -518,7 +518,7 @@ body{
 
 .secondary-button:hover {
 
-    background: #E30613;
+    background: #0047BB;
 
     color: white;
 }
@@ -628,7 +628,7 @@ body{
 
     margin-bottom: 20px;
 
-    color: #E30613;
+    color: #0047BB;
 }
 
 
@@ -683,7 +683,7 @@ body{
 
     margin-bottom: 15px;
 
-    color: #E30613;
+    color: #0047BB;
 }
 
 
@@ -704,7 +704,7 @@ body{
 
     background: linear-gradient(
         135deg,
-        #E30613,
+        #0047BB,
         #b8000f
     );
 
@@ -801,7 +801,7 @@ body{
 
     text-decoration: none;
 
-    background: #E30613;
+    background: #0047BB;
 
     color: white;
 
@@ -1037,7 +1037,7 @@ body{
 
     margin-bottom: 20px;
 
-    color: #E30613;
+    color: #0047BB;
 }
 
 .question-card ul {
@@ -1109,7 +1109,7 @@ body{
 
 .model-name {
 
-    color: #E30613;
+    color: #0047BB;
 
     font-weight: 600;
 
@@ -1125,7 +1125,7 @@ body{
 
     display: block;
 
-    color: #E30613;
+    color: #0047BB;
 
     margin-bottom: 8px;
 
