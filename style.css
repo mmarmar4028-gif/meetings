@@ -1144,53 +1144,54 @@ body{
 /* ==================================
    ЧЕГО ИЗБЕГАТЬ
 ================================== */
+/* ==================================
+   ЧТО ВАЖНО ПОМНИТЬ
+================================== */
 
 .avoid-section {
 
     max-width: 1400px;
 
-    margin: 40px auto;
+    margin: 50px auto;
 
     padding: 50px;
 
-    background: rgba(0, 71, 187, 1);
+    background: #f8fbff;
 
     border-radius: 30px;
 
-    border: 1px solid #FA843C;
+    border: 1px solid #dbeafe;
 }
 
 .avoid-section h2 {
 
-    margin-bottom: 30px;
+    text-align: center;
 
-    font-size: 38px;
+    margin-bottom: 35px;
 
-    color: #FFFFFF;
+    color: #0047BB;
+
+    font-size: 40px;
 }
 
 .avoid-grid {
 
     display: grid;
 
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 
     gap: 20px;
 }
 
 .avoid-card {
 
-    background: rgba(0, 71, 187, 0,4);
+    background: white;
 
-    border-radius: 18px;
+    border-radius: 20px;
 
-    padding: 25px;
+    padding: 24px;
 
-    text-align: center;
-
-    font-weight: 600;
-
-    min-height: 120px;
+    min-height: 150px;
 
     display: flex;
 
@@ -1198,7 +1199,13 @@ body{
 
     justify-content: center;
 
-    border: 1px solid #FA843C;
+    text-align: center;
+
+    font-weight: 600;
+
+    line-height: 1.6;
+
+    border-left: 5px solid #FA843C;
 
     transition: 0.3s;
 }
@@ -1207,9 +1214,8 @@ body{
 
     transform: translateY(-5px);
 
-    box-shadow: 0 10px 20px rgba(0,0,0,0.06);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
 }
-
 
 
 /* ==================================
@@ -1423,4 +1429,230 @@ body{
 
     color: #0047BB;
 }
+
+/* ==================================
+   ШЕСТЬ ШЛЯП ДЕ БОНО
+================================== */
+
+.hats-timeline {
+
+    display: flex;
+
+    gap: 24px;
+
+    overflow-x: auto;
+
+    padding: 20px 0 10px;
+
+    scroll-behavior: smooth;
+}
+
+.hats-timeline::-webkit-scrollbar {
+
+    height: 10px;
+}
+
+.hats-timeline::-webkit-scrollbar-track {
+
+    background: #f3f4f6;
+
+    border-radius: 10px;
+}
+
+.hats-timeline::-webkit-scrollbar-thumb {
+
+    background: #0047BB;
+
+    border-radius: 10px;
+}
+
+.hat-card {
+
+    min-width: 320px;
+
+    max-width: 320px;
+
+    flex-shrink: 0;
+
+    background: white;
+
+    border-radius: 24px;
+
+    padding: 28px;
+
+    border: 1px solid #e5e7eb;
+
+    transition: 0.3s;
+
+    position: relative;
+}
+
+.hat-card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+}
+
+.hat-card h3 {
+
+    margin-bottom: 16px;
+
+    font-size: 24px;
+}
+
+.hat-card p {
+
+    color: #667085;
+
+    line-height: 1.7;
+}
+
+
+/* Цветные полоски сверху */
+
+.blue-hat {
+
+    border-top: 8px solid #0047BB;
+}
+
+.white-hat {
+
+    border-top: 8px solid #D9D9D9;
+}
+
+.red-hat {
+
+    border-top: 8px solid #E53935;
+}
+
+.black-hat {
+
+    border-top: 8px solid #111827;
+}
+
+.yellow-hat {
+
+    border-top: 8px solid #FBBF24;
+}
+
+.green-hat {
+
+    border-top: 8px solid #22C55E;
+}
+
+/* ==================================
+   ШЕСТЬ ШЛЯП ДЕ БОНО
+================================== */
+
+.hats-timeline {
+
+    display: flex;
+
+    gap: 24px;
+
+    overflow-x: auto;
+
+    padding: 20px 0 10px;
+
+    scroll-behavior: smooth;
+}
+
+.hats-timeline::-webkit-scrollbar {
+
+    height: 10px;
+}
+
+.hats-timeline::-webkit-scrollbar-track {
+
+    background: #f3f4f6;
+
+    border-radius: 10px;
+}
+
+.hats-timeline::-webkit-scrollbar-thumb {
+
+    background: #0047BB;
+
+    border-radius: 10px;
+}
+
+.hat-card {
+
+    min-width: 320px;
+
+    max-width: 320px;
+
+    flex-shrink: 0;
+
+    background: white;
+
+    border-radius: 24px;
+
+    padding: 28px;
+
+    border: 1px solid #e5e7eb;
+
+    transition: 0.3s;
+
+    position: relative;
+}
+
+.hat-card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+}
+
+.hat-card h3 {
+
+    margin-bottom: 16px;
+
+    font-size: 24px;
+}
+
+.hat-card p {
+
+    color: #667085;
+
+    line-height: 1.7;
+}
+
+
+/* Цветные полоски сверху */
+
+.blue-hat {
+
+    border-top: 8px solid #0047BB;
+}
+
+.white-hat {
+
+    border-top: 8px solid #D9D9D9;
+}
+
+.red-hat {
+
+    border-top: 8px solid #E53935;
+}
+
+.black-hat {
+
+    border-top: 8px solid #111827;
+}
+
+.yellow-hat {
+
+    border-top: 8px solid #FBBF24;
+}
+
+.green-hat {
+
+    border-top: 8px solid #22C55E;
+}
+
+
+
+
   </style>
