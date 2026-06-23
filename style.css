@@ -1266,4 +1266,161 @@ body{
         font-size:20px;
     }
 }
+
+/* ==================================
+   RETRO PAGE
+================================== */
+
+/* Акцентный блок справа в Hero */
+
+.hero-card {
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.hero-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 5px;
+
+    background: linear-gradient(
+        90deg,
+        #0047BB,
+        #FA843C
+    );
+}
+
+
+/* Карточки особенностей */
+
+.question-card {
+
+    height: 100%;
+}
+
+
+/* Таймлайн ретроспективы */
+
+.timeline::before {
+
+    background: #0047BB;
+}
+
+.timeline-dot {
+
+    background: #0047BB;
+}
+
+
+/* Hover карточек */
+
+.question-card:hover {
+
+    border-color: #0047BB;
+}
+
+
+/* Заголовки */
+
+.question-card h3 {
+
+    color: #0047BB;
+}
+
+
+/* Блок вопросов */
+
+.feedback-models {
+
+    position: relative;
+}
+
+.feedback-models::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 6px;
+
+    border-radius: 30px 30px 0 0;
+
+    background: linear-gradient(
+        90deg,
+        #0047BB,
+        #FA843C
+    );
+}
+
+
+/* Карточки вопросов */
+
+.model-card {
+
+    transition: 0.3s;
+}
+
+.model-card:hover {
+
+    transform: translateY(-5px);
+
+    border-color: #0047BB;
+}
+
+
+/* Скачать шаблон */
+
+.download-button {
+
+    background: #0047BB;
+}
+
+.download-button:hover {
+
+    background: #00338A;
+}
+
+
+/* Вторичная кнопка */
+
+.secondary-button {
+
+    color: #0047BB;
+
+    border-color: #0047BB;
+}
+
+.secondary-button:hover {
+
+    background: #0047BB;
+
+    color: white;
+}
+
+
+/* Тег над заголовком */
+
+.hero-tag {
+
+    background: #EAF2FF;
+
+    color: #0047BB;
+}
   </style>
