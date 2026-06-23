@@ -732,7 +732,7 @@ body{
 
 .feedback-item {
 
-    background: rgba(250,132,60,0.20);
+    background: rgba(250,132,60,0.50);
 
     backdrop-filter: blur(10px);
 
@@ -1153,7 +1153,7 @@ body{
 
     padding: 50px;
 
-    background: rgba (0, 71, 187, 0.40);
+    background: rgba(0, 71, 187, 0.40);
 
     border-radius: 30px;
 
