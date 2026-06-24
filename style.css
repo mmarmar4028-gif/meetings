@@ -1546,113 +1546,88 @@ body{
 ================================== */
 
 .hats-timeline {
-
     display: flex;
-
     gap: 24px;
-
     overflow-x: auto;
-
     padding: 20px 0 10px;
+    scroll-behavior: smooth;}
 
-    scroll-behavior: smooth;
-}
+.hats-timeline::-webkit-scrollbar {height: 10px;}
 
-.hats-timeline::-webkit-scrollbar {
+.hats-timeline::-webkit-scrollbar-track {background: #f3f4f6; border-radius: 10px;}
 
-    height: 10px;
-}
-
-.hats-timeline::-webkit-scrollbar-track {
-
-    background: #f3f4f6;
-
-    border-radius: 10px;
-}
-
-.hats-timeline::-webkit-scrollbar-thumb {
-
-    background: #0047BB;
-
-    border-radius: 10px;
-}
+.hats-timeline::-webkit-scrollbar-thumb {background: #0047BB; border-radius: 10px;}
 
 .hat-card {
-
     min-width: 320px;
-
     max-width: 320px;
-
     flex-shrink: 0;
-
     background: white;
-
     border-radius: 24px;
-
     padding: 28px;
-
     border: 1px solid #e5e7eb;
-
     transition: 0.3s;
+    position: relative;}
 
-    position: relative;
-}
+.hat-card:hover {transform: translateY(-6px); box-shadow: 0 12px 25px rgba(0,0,0,0.08);}
 
-.hat-card:hover {
+.hat-card h3 {margin-bottom: 16px; font-size: 24px;}
 
-    transform: translateY(-6px);
-
-    box-shadow: 0 12px 25px rgba(0,0,0,0.08);
-}
-
-.hat-card h3 {
-
-    margin-bottom: 16px;
-
-    font-size: 24px;
-}
-
-.hat-card p {
-
-    color: #667085;
-
-    line-height: 1.7;
-}
+.hat-card p {color: #667085; line-height: 1.7;}
 
 
 /* Цветные полоски сверху */
 
-.blue-hat {
-
-    border-top: 8px solid #0047BB;
-}
-
-.white-hat {
-
-    border-top: 8px solid #D9D9D9;
-}
-
-.red-hat {
-
-    border-top: 8px solid #E53935;
-}
-
-.black-hat {
-
-    border-top: 8px solid #111827;
-}
-
-.yellow-hat {
-
-    border-top: 8px solid #FBBF24;
-}
-
-.green-hat {
-
-    border-top: 8px solid #22C55E;
-}
+.blue-hat {border-top: 8px solid #0047BB;}
+.white-hat {border-top: 8px solid #D9D9D9;}
+.red-hat {border-top: 8px solid #E53935;}
+.black-hat {border-top: 8px solid #111827;}
+.yellow-hat {border-top: 8px solid #FBBF24;}
+.green-hat {border-top: 8px solid #22C55E;}
 
 
+/* ==================================
+   MODAL WINDOW
+================================== */
 
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;}
+
+.modal-window {
+    background: white;
+    width: 100%;
+    max-width: 850px;
+    max-height: 80vh;
+    overflow-y: auto;
+    border-radius: 24px;
+    padding: 35px;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.2);}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    border: none;
+    background: none;
+    font-size: 32px;
+    cursor: pointer;
+    color: #667085;}
+
+.close-modal:hover {color: #0047BB;}
+
+.hat-button {margin-top: 20px; background: #0047BB; color: white; border: none; border-radius: 12px; padding: 10px 18px; cursor: pointer; transition: 0.3s;}
+
+.hat-button:hover {background: #00338A;}
 
   </style>
