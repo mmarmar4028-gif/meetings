@@ -1,197 +1,100 @@
 <style>
+
     /* =========================
    БАЗОВЫЕ НАСТРОЙКИ
 ========================= */
-
 *{
     margin:0;
     padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
+    box-sizing:border-box;}
+html{scroll-behavior:smooth;}
 body{
     font-family: "Segoe UI", sans-serif;
     background:#f6f7fb;
     color:#1c2333;
-    line-height:1.6;
-}
-
+    line-height:1.6;}
 
 /* =========================
    HEADER
 ========================= */
 
 .header{
-
     position:sticky;
     top:0;
-
     z-index:1000;
-
     background:white;
-
     display:flex;
     justify-content:space-between;
     align-items:center;
-
     padding:20px 7%;
-
     border-bottom:1px solid #e5e7eb;
-
-    box-shadow:0 2px 12px rgba(0,0,0,0.04);
-}
-
+    box-shadow:0 2px 12px rgba(0,0,0,0.04);}
 .logo{
-
     font-size:24px;
     font-weight:700;
-
-    color:#0047BB;
-}
-
-.nav{
-
-    display:flex;
-    gap:35px;
-}
-
+    color:#0047BB;}
+.nav{display:flex; gap:35px;}
 .nav-link{
-
     text-decoration:none;
-
     color:#333;
-
     font-weight:500;
-
-    transition:all 0.25s ease;
-}
-
-.nav-link:hover{
-
-    color:#0047BB;
-
-    transform:scale(1.08);
-}
-
-.active{
-
-    color:#0047BB;
-}
-
+    transition:all 0.25s ease;}
+.nav-link:hover{color:#0047BB; transform:scale(1.08);}
+.active{color:#0047BB;}
 .profile-btn{
-
     padding:12px 20px;
-
     border-radius:30px;
-
     border:1px solid #ddd;
-
     background:white;
-
     cursor:pointer;
-
-    transition:0.3s;
-}
-
+    transition:0.3s;}
 .profile-btn:hover{
-
     transform:translateY(-2px);
-
-    box-shadow:0 4px 15px rgba(0,0,0,0.08);
-}
-
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);}
 
 /* =========================
    HERO
 ========================= */
 
 .hero{
-
     max-width:1400px;
-
     margin:50px auto;
-
     padding:50px;
-
     display:grid;
     grid-template-columns:1fr 1fr;
-
     gap:50px;
-
     background:white;
-
     border-radius:30px;
-
-    box-shadow:0 10px 30px rgba(0,0,0,0.05);
-}
-
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);}
 .hero-content{
-
     display:flex;
     flex-direction:column;
-    justify-content:center;
-}
-
+    justify-content:center;}
 .hero h1{
-
     font-size:64px;
-
-    margin-bottom:20px;
-}
-
+    margin-bottom:20px;}
 .hero-subtitle{
-
     font-size:24px;
-
     font-weight:600;
-
-    margin-bottom:20px;
-}
-
+    margin-bottom:20px;}
 .hero-description{
-
     color:#667085;
-
-    margin-bottom:35px;
-}
-
+    margin-bottom:35px;}
 .hero-button{
-
     width:fit-content;
-
     text-decoration:none;
-
     background:#0047BB;
-
     color:white;
-
     padding:16px 32px;
-
     border-radius:15px;
-
-    transition:0.3s;
-}
-
+    transition:0.3s;}
 .hero-button:hover{
-
     transform:translateY(-2px);
-
-    background:#FA843C;
-}
-
+    background:#FA843C;}
 .hero-image img{
-
     width:100%;
-
     border-radius:20px;
-
-    object-fit:cover;
-}
-
+    object-fit:cover;}
 
 /* =========================
    СЕКЦИИ
@@ -199,204 +102,93 @@ body{
 
 .meeting-section,
 .benefits{
-
     max-width:1400px;
-
     margin:40px auto;
-
     padding:50px;
-
     background:white;
-
     border-radius:30px;
-
-    box-shadow:0 10px 30px rgba(0,0,0,0.05);
-}
-
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);}
 .meeting-section h2,
 .benefits h2{
-
     margin-bottom:35px;
-
-    font-size:38px;
-}
-
+    font-size:38px;}
 
 /* =========================
    КАРТОЧКИ ВСТРЕЧ
 ========================= */
 
 .meeting-slider{
-
     display:flex;
-
     gap:25px;
-
     overflow-x:auto;
-
     scroll-behavior:smooth;
-
-    padding-bottom:10px;
-}
-
-.meeting-slider::-webkit-scrollbar{
-
-    height:8px;
-}
-
+    padding-bottom:10px;}
+.meeting-slider::-webkit-scrollbar{height:8px;}
 .meeting-slider::-webkit-scrollbar-thumb{
-
     background:#0047BB;
-
-    border-radius:20px;
-}
-
+    border-radius:20px;}
 .meeting-card{
-
     min-width:350px;
-
     background:white;
-
     border:1px solid #ececec;
-
     border-radius:24px;
-
     padding:30px;
-
     flex-shrink:0;
-
     transition:0.3s;
-
-    box-shadow:0 5px 15px rgba(0,0,0,0.04);
-}
-
+    box-shadow:0 5px 15px rgba(0,0,0,0.04);}
 .meeting-card:hover{
-
     transform:translateY(-5px);
-
-    box-shadow:0 10px 25px rgba(0,0,0,0.08);
-}
-
-.meeting-card h3{
-
-    font-size:28px;
-
-    margin-bottom:15px;
-}
-
-.meeting-card p{
-
-    margin-bottom:15px;
-}
-
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);}
+.meeting-card h3{font-size:28px; margin-bottom:15px;}
+.meeting-card p{margin-bottom:15px;}
 .meeting-card ul{
-
     margin-bottom:25px;
-
-    padding-left:18px;
-}
-
-.meeting-card li{
-
-    margin-bottom:10px;
-}
-
+    padding-left:18px;}
+.meeting-card li{margin-bottom:10px;}
 .card-button{
-
     display:inline-block;
-
     text-decoration:none;
-
     color:white;
-
     background:#0047BB;
-
     padding:14px 22px;
-
     border-radius:12px;
-
-    transition:0.3s;
-}
-
-.card-button:hover{
-
-    background:#FA843C;
-}
-
+    transition:0.3s;}
+.card-button:hover{background:#FA843C;}
 
 /* =========================
    ПРЕИМУЩЕСТВА
 ========================= */
 
 .benefits-grid{
-
     display:grid;
-
     grid-template-columns:repeat(4,1fr);
-
-    gap:20px;
-}
+    gap:20px;}
 
 .benefit-card{
-
     background:#fafafa;
-
     border:1px solid #ececec;
-
     border-radius:20px;
-
-    padding:25px;
-}
-
-.benefit-card h3{
-
-    margin-bottom:12px;
-
-    font-size:20px;
-}
-
-.benefit-card p{
-
-    color:#667085;
-}
-
+    padding:25px;}
+.benefit-card h3{margin-bottom:12px; font-size:20px;}
+.benefit-card p{color:#667085;}
 
 /* =========================
    FOOTER
 ========================= */
 
 .footer{
-
     text-align:center;
-
     padding:40px;
-
-    color:#667085;
-}
-
+    color:#667085;}
 
 /* =========================
    TABLET
 ========================= */
 
 @media(max-width:1024px){
-
-    .hero{
-
-        grid-template-columns:1fr;
-    }
-
-    .hero h1{
-
-        font-size:48px;
-    }
-
-    .benefits-grid{
-
-        grid-template-columns:repeat(2,1fr);
-    }
-}
-
+    .hero{grid-template-columns:1fr;}
+    .hero h1{font-size:48px;}
+    .benefits-grid{grid-template-columns:repeat(2,1fr);}}
 
 /* =========================
    MOBILE
@@ -404,506 +196,201 @@ body{
 
 @media(max-width:768px){
     .header{flex-wrap:wrap; gap:20px;}
-
     .nav {width:100%;
         overflow-x:auto;
         justify-content:flex-start;
         padding-bottom:5px;}
-
     .hero{padding:30px;}
-
     .hero h1{font-size:40px;}
-
     .hero-subtitle{font-size:20px;}
-
     .meeting-card{ min-width:85%;}
-
     .benefits-grid{grid-template-columns:1fr;}
-
     .meeting-section,
-    .benefits{padding:30px;}
-}
+    .benefits{padding:30px;}}
 
 /* ==================================
    1-to-1 PAGE
 ================================== */
 
 .one-to-one-hero {
-
     max-width: 1400px;
-
     margin: 50px auto;
-
     padding: 50px;
-
     display: grid;
-
     grid-template-columns: 1.5fr 1fr;
-
     gap: 40px;
-
     background: white;
-
     border-radius: 30px;
-
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-}
-
-
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);}
 .hero-tag {
-
     display: inline-block;
-
     background: #FA843C;
-
     color: #FFFFFF;
-
     padding: 10px 18px;
-
     border-radius: 999px;
-
     font-weight: 600;
-
-    margin-bottom: 20px;
-}
-
-
+    margin-bottom: 20px;}
 .one-to-one-hero h1 {
-
     font-size: 64px;
-
-    margin-bottom: 20px;
-}
-
-
+    margin-bottom: 20px;}
 .one-to-one-hero p {
-
     color: #667085;
-
     font-size: 18px;
-
     max-width: 700px;
-
-    margin-bottom: 30px;
-}
-
-
+    margin-bottom: 30px;}
 .hero-buttons {
-
     display: flex;
-
     gap: 15px;
-
-    flex-wrap: wrap;
-}
-
-
+    flex-wrap: wrap;}
 .secondary-button {
-
     text-decoration: none;
-
     background: white;
-
     color: #0047BB;
-
     border: 1px solid #0047BB;
-
     padding: 16px 30px;
-
     border-radius: 15px;
-
-    transition: 0.3s;
-}
-
-
-.secondary-button:hover {
-
-    background: #0047BB;
-
-    color: white;
-}
-
-
+    transition: 0.3s;}
+.secondary-button:hover {background: #0047BB; color: white;}
 .hero-card {
-
     background: #fafafa;
-
     border: 1px solid #ececec;
-
     border-radius: 24px;
-
     padding: 30px;
-
-    height: fit-content;
-}
-
-
-.hero-card h3 {
-
-    margin-bottom: 20px;
-
-    font-size: 24px;
-}
-
-
-.hero-card ul {
-
-    list-style: none;
-}
-
-
-.hero-card li {
-
-    margin-bottom: 16px;
-
-    font-size: 17px;
-}
-
-
+    height: fit-content;}
+.hero-card h3 {margin-bottom: 20px; font-size: 24px;}
+.hero-card ul {list-style: none;}
+.hero-card li {margin-bottom: 16px; font-size: 17px;}
 
 /* ==================================
    CONTENT SECTIONS
 ================================== */
 
 .content-section {
-
     max-width: 1400px;
-
     margin: 40px auto;
-
     padding: 50px;
-
     background: white;
-
     border-radius: 30px;
-
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-}
-
-
-.content-section h2 {
-
-    font-size: 40px;
-
-    margin-bottom: 30px;
-}
-
-
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);}
+.content-section h2 {font-size: 40px; margin-bottom: 30px;}
 .content-section p {
-
     color: #667085;
-
-    margin-bottom: 20px;
-}
-
-
+    margin-bottom: 20px;}
 
 /* ==================================
    PREPARATION
 ================================== */
 
 .preparation-grid {
-
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
-    gap: 30px;
-}
-
-
+    gap: 30px;}
 .preparation-card {
-
     background: #fafafa;
-
     border: 1px solid #ececec;
-
     border-radius: 24px;
-
-    padding: 30px;
-}
-
-
-.preparation-card h3 {
-
-    margin-bottom: 20px;
-
-    color: #0047BB;
-}
-
-
-.preparation-card ul {
-
-    padding-left: 20px;
-}
-
-
-.preparation-card li {
-
-    margin-bottom: 15px;
-}
-
-
+    padding: 30px;}
+.preparation-card h3 {margin-bottom: 20px; color: #0047BB;}
+.preparation-card ul {padding-left: 20px;}
+.preparation-card li {margin-bottom: 15px;}
 
 /* ==================================
    PRINCIPLES
 ================================== */
 
 .principles-grid {
-
     display: grid;
-
     grid-template-columns: repeat(4, 1fr);
-
-    gap: 20px;
-}
-
-
+    gap: 20px;}
 .principle-card {
-
     background: #fafafa;
-
     border: 1px solid #ececec;
-
     border-radius: 20px;
-
     padding: 25px;
-
-    transition: 0.3s;
-}
-
-
-.principle-card:hover {
-
-    transform: translateY(-5px);
-}
-
-
-.principle-card h3 {
-
-    margin-bottom: 15px;
-
-    color: #0047BB;
-}
-
-
+    transition: 0.3s;}
+.principle-card:hover {transform: translateY(-5px);}
+.principle-card h3 {margin-bottom: 15px; color: #0047BB;}
 
 /* ==================================
    FEEDBACK
 ================================== */
 
 .feedback-block {
-
     max-width: 1400px;
-
     margin: 40px auto;
-
     padding: 50px;
-
     border-radius: 30px;
-
-    background: linear-gradient(
-        135deg,
-        #0047BB,
-        #b8000f
-    );
-
-    color: white;
-}
-
-
+    background: linear-gradient(135deg, #0047BB, #b8000f);
+    color: white;}
 .feedback-block h2 {
-
     font-size: 40px;
-
-    margin-bottom: 35px;
-}
-
-
+    margin-bottom: 35px;}
 .feedback-grid {
-
     display: grid;
-
     grid-template-columns: repeat(2, 1fr);
-
-    gap: 25px;
-}
-
-
+    gap: 25px;}
 .feedback-item {
-
     background: rgba(250,132,60,0.50);
-
     backdrop-filter: blur(10px);
-
     border-radius: 20px;
-
-    padding: 25px;
-}
-
-
-.feedback-item h3 {
-
-    margin-bottom: 12px;
-}
-
-
-.feedback-item p {
-
-    color: #FA843C;
-}
-
-
+    padding: 25px;}
+.feedback-item h3 {margin-bottom: 12px;}
+.feedback-item p {color: #FA843C;}
 
 /* ==================================
    DOWNLOAD SECTION
 ================================== */
 
 .download-section {
-
     max-width: 1400px;
-
     margin: 40px auto;
-
     padding: 60px;
-
     background: white;
-
     border-radius: 30px;
-
     text-align: center;
-
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-}
-
-
-.download-section h2 {
-
-    font-size: 40px;
-
-    margin-bottom: 20px;
-}
-
-
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);}
+.download-section h2 {font-size: 40px; margin-bottom: 20px;}
 .download-section p {
-
     color: #667085;
-
     max-width: 700px;
-
-    margin: 0 auto 30px;
-}
-
-
+    margin: 0 auto 30px;}
 .download-button {
-
     display: inline-block;
-
     text-decoration: none;
-
     background: #0047BB;
-
     color: white;
-
     padding: 18px 36px;
-
     border-radius: 15px;
-
     font-weight: 600;
-
-    transition: 0.3s;
-}
-
-
+    transition: 0.3s;}
 .download-button:hover {
-
     background: #c0000f;
-
-    transform: translateY(-3px);
-}
-
-
+    transform: translateY(-3px);}
 
 /* ==================================
    TABLET
 ================================== */
 
 @media(max-width:1024px){
-
-    .one-to-one-hero{
-
-        grid-template-columns:1fr;
-    }
-
-    .principles-grid{
-
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .feedback-grid{
-
-        grid-template-columns:1fr;
-    }
-}
-
-
+    .one-to-one-hero{grid-template-columns:1fr;}
+    .principles-grid{grid-template-columns:repeat(2,1fr);}
+    .feedback-grid{grid-template-columns:1fr;}}
 
 /* ==================================
    MOBILE
 ================================== */
 
 @media(max-width:768px){
-
-    .one-to-one-hero{
-
-        padding:30px;
-    }
-
-    .one-to-one-hero h1{
-
-        font-size:42px;
-    }
-
-    .content-section{
-
-        padding:30px;
-    }
-
-    .download-section{
-
-        padding:30px;
-    }
-
-    .preparation-grid{
-
-        grid-template-columns:1fr;
-    }
-
-    .principles-grid{
-
-        grid-template-columns:1fr;
-    }
-
-    .feedback-block{
-
-        padding:30px;
-    }
-
-    .feedback-block h2{
-
-        font-size:32px;
-    }
-
-    .content-section h2{
-
-        font-size:32px;
-    }
-
-    .download-section h2{
-
-        font-size:32px;
-    }
-}
+    .one-to-one-hero{padding:30px;}
+    .one-to-one-hero h1{font-size:42px;}
+    .content-section{padding:30px;}
+    .download-section{padding:30px;}
+    .preparation-grid{grid-template-columns:1fr;}
+    .principles-grid{grid-template-columns:1fr;}
+    .feedback-block{padding:30px;}
+    .feedback-block h2{font-size:32px;}
+    .content-section h2{font-size:32px;}
+    .download-section h2{font-size:32px;}}
 
 /* ==================================
    СТРУКТУРА ВСТРЕЧИ
@@ -914,232 +401,72 @@ body{
 ================================== */
 
 .timeline {
-
     position: relative;
-
     margin-top: 40px;
-
-    padding-left: 40px;
-}
-
+    padding-left: 40px;}
 .timeline::before {
-
     content: "";
-
     position: absolute;
-
     left: 11px;
-
     top: 0;
-
     bottom: 0;
-
     width: 3px;
-
-    background: #dbe4ff;
-}
-
+    background: #dbe4ff;}
 .timeline-item {
-
     position: relative;
-
-    margin-bottom: 30px;
-}
-
+    margin-bottom: 30px;}
 .timeline-dot {
-
     position: absolute;
-
     left: -35px;
-
     top: 28px;
-
     width: 18px;
-
     height: 18px;
-
     border-radius: 50%;
-
     background: #4f8cff;
-
-    box-shadow: 0 0 0 6px white;
-}
-
+    box-shadow: 0 0 0 6px white;}
 .timeline-content {
-
     background: #fafafa;
-
     border: 1px solid #ececec;
-
     border-radius: 20px;
-
     padding: 24px;
-
-    transition: 0.3s;
-}
-
-.timeline-content:hover {
-
-    transform: translateX(5px);
-
-    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
-}
-
-.timeline-content h3 {
-
-    margin-bottom: 10px;
-}
-
-.timeline-content p {
-
-    margin: 0;
-
-    color: #667085;
-}
-
+    transition: 0.3s;}
+.timeline-content:hover {transform: translateX(5px); box-shadow: 0 10px 25px rgba(0,0,0,0.06);}
+.timeline-content h3 {margin-bottom: 10px;}
+.timeline-content p {margin: 0; color: #667085;}
 
 /* ==================================
    ПОЛЕЗНЫЕ ВОПРОСЫ
 ================================== */
 
 .questions-grid {
-
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: 25px;
-
-    margin-top: 30px;
-}
-
+    margin-top: 30px;}
 .question-card {
-
     background: #fafafa;
-
     border: 1px solid #ececec;
-
     border-radius: 24px;
-
     padding: 30px;
-
-    transition: 0.3s;
-}
-
-.question-card:hover {
-
-    transform: translateY(-5px);
-
-    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
-}
-
-.question-card h3 {
-
-    margin-bottom: 20px;
-
-    color: #0047BB;
-}
-
-.question-card ul {
-
-    padding-left: 20px;
-}
-
-.question-card li {
-
-    margin-bottom: 14px;
-
-    color: #4b5563;
-}
-
-
+    transition: 0.3s;}
+.question-card:hover {transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.06);}
+.question-card h3 {margin-bottom: 20px; color: #0047BB;}
+.question-card ul {padding-left: 20px;}
+.question-card li {margin-bottom: 14px;color: #4b5563;}
 
 /* ==================================
    ОБРАТНАЯ СВЯЗЬ
 ================================== */
 
-.feedback-models {
-
-    max-width: 1400px;
-
-    margin: 40px auto;
-
-    padding: 50px;
-
-    background: white;
-
-    border-radius: 30px;
-
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-}
-
-.feedback-models h2 {
-
-    font-size: 40px;
-
-    margin-bottom: 35px;
-}
-
-.models-grid {
-
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 30px;
-}
-
-.model-card {
-
-    padding: 35px;
-
-    border-radius: 24px;
-
-    border: 1px solid #ececec;
-
-    background: #fafafa;
-}
-
-.model-card h3 {
-
-    margin-bottom: 12px;
-
-    color: #1c2333;
-}
-
-.model-name {
-
-    color: #0047BB;
-
-    font-weight: 600;
-
-    margin-bottom: 25px;
-}
-
-.model-step {
-
-    margin-bottom: 25px;
-}
-
-.model-step strong {
-
-    display: block;
-
-    color: #0047BB;
-
-    margin-bottom: 8px;
-
-    font-size: 18px;
-}
-
-.model-step p {
-
-    color: #667085;
-
-    margin: 0;
-}
-
-
+.feedback-models {max-width: 1400px; margin: 40px auto; padding: 50px; background: white; border-radius: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);}
+.feedback-models h2 {font-size: 40px; margin-bottom: 35px;}
+.models-grid {display: grid; grid-template-columns: 1fr 1fr; gap: 30px;}
+.model-card {padding: 35px; border-radius: 24px; border: 1px solid #ececec; background: #fafafa;}
+.model-card h3 {margin-bottom: 12px; color: #1c2333;}
+.model-name {color: #0047BB;font-weight: 600; margin-bottom: 25px;}
+.model-step {margin-bottom: 25px;}
+.model-step strong {display: block; color: #0047BB; margin-bottom: 8px; font-size: 18px;}
+.model-step p {color: #667085; margin: 0;}
 
 /* ==================================
    ЧЕГО ИЗБЕГАТЬ
@@ -1149,397 +476,156 @@ body{
 ================================== */
 
 .avoid-section {
-
     max-width: 1400px;
-
     margin: 50px auto;
-
     padding: 50px;
-
     background: #f8fbff;
-
     border-radius: 30px;
-
-    border: 1px solid #dbeafe;
-}
+    border: 1px solid #dbeafe;}
 
 .avoid-section h2 {
-
     text-align: center;
-
     margin-bottom: 35px;
-
     color: #0047BB;
-
-    font-size: 40px;
-}
+    font-size: 40px;}
 
 .avoid-grid {
-
     display: grid;
-
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-
-    gap: 20px;
-}
+    gap: 20px;}
 
 .avoid-card {
-
     background: white;
-
     border-radius: 20px;
-
     padding: 24px;
-
     min-height: 150px;
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
     text-align: center;
-
     font-weight: 600;
-
     line-height: 1.6;
-
     border-left: 5px solid #FA843C;
+    transition: 0.3s;}
 
-    transition: 0.3s;
-}
-
-.avoid-card:hover {
-
-    transform: translateY(-5px);
-
-    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
-}
-
+.avoid-card:hover {transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);}
 
 /* ==================================
    АДАПТИВ
 ================================== */
 
 @media(max-width:1024px){
-
-    .questions-grid{
-
-        grid-template-columns:1fr;
-    }
-
-    .models-grid{
-
-        grid-template-columns:1fr;
-    }
-
-    .avoid-grid{
-
-        grid-template-columns:repeat(2,1fr);
-    }
-}
+    .questions-grid{grid-template-columns:1fr;}
+    .models-grid{grid-template-columns:1fr;}
+    .avoid-grid{grid-template-columns:repeat(2,1fr);}}
 
 @media(max-width:768px){
-
-    .feedback-models{
-
-        padding:30px;
-    }
-
-    .feedback-models h2{
-
-        font-size:32px;
-    }
-
-    .avoid-section{
-
-        padding:30px;
-    }
-
-    .avoid-section h2{
-
-        font-size:32px;
-    }
-
-    .avoid-grid{
-
-        grid-template-columns:1fr;
-    }
-
-    .flow-item h3{
-
-        font-size:20px;
-    }
-}
+    .feedback-models{padding:30px;}
+    .feedback-models h2{font-size:32px;}
+    .avoid-section{padding:30px;}
+    .avoid-section h2{font-size:32px;}
+    .avoid-grid{grid-template-columns:1fr;}
+    .flow-item h3{font-size:20px;}}
 
 /* ==================================
    RETRO PAGE
 ================================== */
 
 /* Акцентный блок справа в Hero */
-
-.hero-card {
-
-    position: relative;
-
-    overflow: hidden;
-}
-
+.hero-card {position: relative; overflow: hidden;}
 .hero-card::before {
-
     content: "";
-
     position: absolute;
-
     top: 0;
-
     left: 0;
-
     width: 100%;
-
     height: 5px;
-
     background: linear-gradient(
         90deg,
         #0047BB,
-        #FA843C
-    );
-}
-
+        #FA843C);}
 
 /* Карточки особенностей */
-
-.question-card {
-
-    height: 100%;
-}
-
+.question-card {height: 100%;}
 
 /* Таймлайн ретроспективы */
-
-.timeline::before {
-
-    background: #0047BB;
-}
-
-.timeline-dot {
-
-    background: #0047BB;
-}
-
+.timeline::before {background: #0047BB;}
+.timeline-dot {background: #0047BB;}
 
 /* Hover карточек */
-
-.question-card:hover {
-
-    border-color: #0047BB;
-}
-
+.question-card:hover {border-color: #0047BB;}
 
 /* Заголовки */
-
-.question-card h3 {
-
-    color: #0047BB;
-}
-
+.question-card h3 {color: #0047BB;}
 
 /* Блок вопросов */
-
-.feedback-models {
-
-    position: relative;
-}
-
+.feedback-models {position: relative;}
 .feedback-models::before {
-
     content: "";
-
     position: absolute;
-
     top: 0;
-
     left: 0;
-
     width: 100%;
-
     height: 6px;
-
     border-radius: 30px 30px 0 0;
-
     background: linear-gradient(
         90deg,
         #0047BB,
-        #FA843C
-    );
-}
-
+        #FA843C);}
 
 /* Карточки вопросов */
-
-.model-card {
-
-    transition: 0.3s;
-}
-
-.model-card:hover {
-
-    transform: translateY(-5px);
-
-    border-color: #0047BB;
-}
-
+.model-card {transition: 0.3s;}
+.model-card:hover {transform: translateY(-5px); border-color: #0047BB;}
 
 /* Скачать шаблон */
-
-.download-button {
-
-    background: #0047BB;
-}
-
-.download-button:hover {
-
-    background: #00338A;
-}
-
+.download-button {background: #0047BB;}
+.download-button:hover {background: #00338A;}
 
 /* Вторичная кнопка */
-
-.secondary-button {
-
-    color: #0047BB;
-
-    border-color: #0047BB;
-}
-
-.secondary-button:hover {
-
-    background: #0047BB;
-
-    color: white;
-}
-
+.secondary-button {color: #0047BB; border-color: #0047BB;}
+.secondary-button:hover {background: #0047BB; color: white;}
 
 /* Тег над заголовком */
-
-.hero-tag {
-
-    background: #EAF2FF;
-
-    color: #0047BB;
-}
+.hero-tag {background: #EAF2FF; color: #0047BB;}
 
 /* ==================================
    ШЕСТЬ ШЛЯП ДЕ БОНО
 ================================== */
 
 .hats-timeline {
-
     display: flex;
-
     gap: 24px;
-
     overflow-x: auto;
-
     padding: 20px 0 10px;
+    scroll-behavior: smooth;}
 
-    scroll-behavior: smooth;
-}
-
-.hats-timeline::-webkit-scrollbar {
-
-    height: 10px;
-}
-
-.hats-timeline::-webkit-scrollbar-track {
-
-    background: #f3f4f6;
-
-    border-radius: 10px;
-}
-
-.hats-timeline::-webkit-scrollbar-thumb {
-
-    background: #0047BB;
-
-    border-radius: 10px;
-}
+.hats-timeline::-webkit-scrollbar {height: 10px;}
+.hats-timeline::-webkit-scrollbar-track {background: #f3f4f6; border-radius: 10px;}
+.hats-timeline::-webkit-scrollbar-thumb {background: #0047BB; border-radius: 10px;}
 
 .hat-card {
-
     min-width: 320px;
-
     max-width: 320px;
-
     flex-shrink: 0;
-
     background: white;
-
     border-radius: 24px;
-
     padding: 28px;
+    border: 1px solid #e5e7eb; transition: 0.3s; position: relative;}
 
-    border: 1px solid #e5e7eb;
-
-    transition: 0.3s;
-
-    position: relative;
-}
-
-.hat-card:hover {
-
-    transform: translateY(-6px);
-
-    box-shadow: 0 12px 25px rgba(0,0,0,0.08);
-}
-
-.hat-card h3 {
-
-    margin-bottom: 16px;
-
-    font-size: 24px;
-}
-
-.hat-card p {
-
-    color: #667085;
-
-    line-height: 1.7;
-}
+.hat-card:hover {transform: translateY(-6px); box-shadow: 0 12px 25px rgba(0,0,0,0.08);}
+.hat-card h3 {margin-bottom: 16px; font-size: 24px;}
+.hat-card p {color: #667085; line-height: 1.7;}
 
 
 /* Цветные полоски сверху */
 
-.blue-hat {
-
-    border-top: 8px solid #0047BB;
-}
-
-.white-hat {
-
-    border-top: 8px solid #D9D9D9;
-}
-
-.red-hat {
-
-    border-top: 8px solid #E53935;
-}
-
-.black-hat {
-
-    border-top: 8px solid #111827;
-}
-
-.yellow-hat {
-
-    border-top: 8px solid #FBBF24;
-}
-
-.green-hat {
-
-    border-top: 8px solid #22C55E;
-}
+.blue-hat {border-top: 8px solid #0047BB;}
+.white-hat {border-top: 8px solid #D9D9D9;}
+.red-hat {border-top: 8px solid #E53935;}
+.black-hat {border-top: 8px solid #111827;}
+.yellow-hat {border-top: 8px solid #FBBF24;}
+.green-hat { border-top: 8px solid #22C55E;}
 
 /* ==================================
    ШЕСТЬ ШЛЯП ДЕ БОНО
