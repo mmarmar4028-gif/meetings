@@ -424,6 +424,10 @@
                       <p> </p>
                       <p> Создаем прочную основу для понимания проблемы. Подтверждается/Опровергается реалистичность обсуждаемой идеи.</p>
                 </p>
+                     <button class="hat-button"
+                     onclick="openModal('whiteModal')">
+                     Подробнее
+                     </button>
             </div>
         
 
@@ -440,7 +444,10 @@
                       <p> </p>
                       <p>Помогает раскрыть личные ценности, опасения и мотивы, и в дальнейшем адаптировать идею.</p>
                 </p>
-                
+                     <button class="hat-button"
+                     onclick="openModal('redModal')">
+                     Подробнее
+                     </button>
             </div>
 
          
@@ -461,7 +468,10 @@
                     Что может пойти не так?
                     Какие есть угрозы и препятствия?
                 </p>
-
+                     <button class="hat-button"
+                     onclick="openModal('blackModal')">
+                     Подробнее
+                     </button>
             </div>
 
          
@@ -483,7 +493,10 @@
                     Какие плюсы даст идея?
                     Какую ценность она принесет?
                 </p>
-
+                     <button class="hat-button"
+                     onclick="openModal('yellowModal')">
+                     Подробнее
+                     </button>
             </div>
 
 
@@ -505,8 +518,12 @@
                     Что можно улучшить?
                     Какие нестандартные варианты существуют?
                 </p>
-
+                     <button class="hat-button"
+                     onclick="openModal('greenModal')">
+                     Подробнее
+                     </button>
             </div>
+
          
             <div class="hat-card blue-hat">
                  <div class="hat-step-label">
@@ -526,7 +543,10 @@
                     объясняет правила, следит за таймингом
                     и фиксирует итоговые решения.
                 </p>
-
+                     <button class="hat-button"
+                     onclick="openModal('blueModal')">
+                     Подробнее
+                     </button>
             </div>
 
         </div>
@@ -713,7 +733,106 @@
 
     </footer>
 
-    <script src="script.js"></script>
+   
+    
+    <div class="modal-overlay"
+     id="whiteModal">
+    <div class="modal-window">
+        <button class="close-modal"
+                onclick="closeModal('whiteModal')">
+            ×
+        </button>
+        <h2>⚪ Белая шляпа</h2>
+        <p>
+            Здесь будет подробное описание.
+        </p>
+    </div>
+</div>
+
+
+
+<div class="modal-overlay"
+     id="redModal">
+    <div class="modal-window">
+        <button class="close-modal"
+                onclick="closeModal('redModal')">
+            ×
+        </button>
+        <h2>🔴 Красная шляпа</h2>
+        <p>
+            Здесь будет подробное описание.
+        </p>
+    </div>
+</div>
+
+
+<div class="modal-overlay"
+     id="blackModal">
+    <div class="modal-window">
+        <button class="close-modal"
+                onclick="closeModal('blackModal')">
+            ×
+        </button>
+        <h2>⚫ Черная шляпа</h2>
+        <p>
+            Здесь будет подробное описание.
+        </p>
+    </div>
+</div>
+
+
+<div class="modal-overlay"
+     id="yellowModal">
+    <div class="modal-window">
+        <button class="close-modal"
+                onclick="closeModal('yellowModal')">
+            ×
+        </button>
+        <h2>🟡 Желтая шляпа</h2>
+        <p>
+            Здесь будет подробное описание.
+        </p>
+    </div>
+</div>
+
+
+<div class="modal-overlay"
+     id="greenModal">
+    <div class="modal-window">
+        <button class="close-modal"
+                onclick="closeModal('greenModal')">
+            ×
+        </button>
+        <h2>🟢 Зеленая шляпа</h2>
+        <p>
+            Здесь будет подробное описание.
+        </p>
+    </div>
+</div>
+
+
+<div class="modal-overlay"
+     id="blueModal">
+    <div class="modal-window">
+        <button class="close-modal"
+                onclick="closeModal('blueModal')">
+            ×
+        </button>
+        <h2>🔵 Синяя шляпа</h2>
+        <p>
+            Здесь будет подробное описание.
+        </p>
+    </div>
+</div>
+
+
+<script>
+function openModal(modalId) {document.getElementById(modalId).style.display = "flex";}
+function closeModal(modalId) {document.getElementById(modalId).style.display = "none";}
+window.onclick = function(event) {const modals = document.querySelectorAll(".modal-overlay");
+modals.forEach(function(modal) {if (event.target === modal) {modal.style.display = "none";}});};
+</script>
+
 
 </body>
 
