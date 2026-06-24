@@ -226,120 +226,325 @@
          ШЕСТЬ ШЛЯП ДЕ БОНО
     ====================== -->
 
-    <section class="content-section"
-             id="hats">
+<section class="content-section hats-infographic" id="hats">
 
-        <h2>
-            Метод «Шесть шляп мышления» Эдварда де Боно
-        </h2>
+    <div class="hats-header">
 
-        <p> Метод брейншторма, помогающий взглянуть на одну и ту же проблему с 6 разных сторон.<p>
-            <p> На каждом этапе участники встречи обсуждают проблему с определенной точки зрения, то есть "примеряют" на себя шляпу конкретного цвета. </p>
-            <p>  </p>
-            <p>  </p>
-            <p>  </p>
+        <div class="hats-header-text">
 
+            <h2>Метод «Шесть шляп мышления»</h2>
 
-        
-     <div class="hats-timeline">
+            <p class="hats-lead">
+                Структурированный подход для рассмотрения проблемы с разных сторон,
+                поиска решений и принятия взвешенных решений.
+            </p>
 
-        <div class="hat-card white-hat">
-                 <div class="hat-step-label">
-                 Шаг 1
-                 </div>
-                <h3>⚪ Белая шляпа</h3>
-                <p> Факты, объективность, логика </p>
-                     <button class="hat-button"
-                     onclick="openModal('whiteModal')">
-                     Подробнее
-                     </button>
-            </div>
-        
-
-            <div class="hat-card red-hat">
-                 <div class="hat-step-label">
-                 Шаг 2
-                 </div>
-                <h3>🔴 Красная шляпа</h3>
-                <p>Чувства, субъективность, эмоции</p>
-                     <button class="hat-button"
-                     onclick="openModal('redModal')">
-                     Подробнее
-                     </button>
-            </div>
-
-         
-         <div class="hat-card black-hat">
-                 <div class="hat-step-label">
-                 Шаг 3
-                 </div>
-                <h3>⚫ Черная шляпа</h3>
-                <p> Риски и ограничения </p>
-                <p>
-                    Что может пойти не так?
-                    Какие есть угрозы и препятствия?
-                </p>
-                     <button class="hat-button"
-                     onclick="openModal('blackModal')">
-                     Подробнее
-                     </button>
-            </div>
-
-         
-         
-          <div class="hat-card yellow-hat">
-                 <div class="hat-step-label">
-                 Шаг 4
-                 </div>
-                <h3>🟡 Желтая шляпа</h3>
-                <p>
-                    Какие плюсы даст идея?
-                    Какую ценность она принесет?
-                </p>
-                     <button class="hat-button"
-                     onclick="openModal('yellowModal')">
-                     Подробнее
-                     </button>
-            </div>
-
-
-         <div class="hat-card green-hat">
-                 <div class="hat-step-label">
-                 Шаг 5
-                 </div>
-                <h3>🟢 Зеленая шляпа</h3>
-                <p> Креативность</p>
-                <p>
-                    Какие есть альтернативы?
-                    Что можно улучшить?
-                    Какие нестандартные варианты существуют?
-                </p>
-                     <button class="hat-button"
-                     onclick="openModal('greenModal')">
-                     Подробнее
-                     </button>
-            </div>
-
-         
-            <div class="hat-card blue-hat">
-                 <div class="hat-step-label">
-                 Шаг 6
-                 </div>
-                <h3>🔵 Синяя шляпа</h3>
-                <p> Управление процессом </p>
-                <p>
-                    Фасилитатор определяет цель встречи,
-                    объясняет правила, следит за таймингом
-                    и фиксирует итоговые решения.
-                </p>
-                     <button class="hat-button"
-                     onclick="openModal('blueModal')">
-                     Подробнее
-                     </button>
-            </div>
         </div>
-    </section>
 
+        <div class="hats-how">
+
+            <div class="hats-how-icon">
+                💡
+            </div>
+
+            <div class="hats-how-text">
+                <h3>Как это работает?</h3>
+                <p>
+                    Мы последовательно «надеваем» разные шляпы,
+                    чтобы посмотреть на задачу с разных ракурсов.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="hats-steps-row">
+
+        <div class="hat-step-head">
+            <div class="hat-step-circle blue">1</div>
+            <div class="hat-step-label">Шаг 1</div>
+        </div>
+
+        <div class="hat-step-head">
+            <div class="hat-step-circle gray">2</div>
+            <div class="hat-step-label">Шаг 2</div>
+        </div>
+
+        <div class="hat-step-head">
+            <div class="hat-step-circle red">3</div>
+            <div class="hat-step-label">Шаг 3</div>
+        </div>
+
+        <div class="hat-step-head">
+            <div class="hat-step-circle dark">4</div>
+            <div class="hat-step-label">Шаг 4</div>
+        </div>
+
+        <div class="hat-step-head">
+            <div class="hat-step-circle yellow">5</div>
+            <div class="hat-step-label">Шаг 5</div>
+        </div>
+
+        <div class="hat-step-head">
+            <div class="hat-step-circle green">6</div>
+            <div class="hat-step-label">Шаг 6</div>
+        </div>
+
+    </div>
+
+
+    <div class="hats-cards-grid">
+
+        <article class="hat-card blue-card">
+
+            <div class="hat-card-image">
+                <img src="blue-hat.png" alt="Синяя шляпа">
+            </div>
+
+            <h3>Синяя шляпа</h3>
+            <p class="hat-role">Руководитель</p>
+
+            <div class="hat-card-body">
+
+                <div class="hat-mini-head">
+                    Управляет процессом встречи.
+                </div>
+
+                <ul>
+                    <li>Определяем цель</li>
+                    <li>Планируем этапы</li>
+                    <li>Следим за правилами</li>
+                    <li>Подводим итоги</li>
+                </ul>
+
+            </div>
+
+            <div class="hat-focus">
+                <strong>Фокус:</strong> организация
+            </div>
+
+        </article>
+
+
+        <article class="hat-card gray-card">
+
+            <div class="hat-card-image">
+                <img src="white-hat.png" alt="Белая шляпа">
+            </div>
+
+            <h3>Белая шляпа</h3>
+            <p class="hat-role">Аналитик</p>
+
+            <div class="hat-card-body">
+
+                <div class="hat-mini-head">
+                    Работаем с фактами и информацией.
+                </div>
+
+                <ul>
+                    <li>Что мы знаем?</li>
+                    <li>Какая есть информация?</li>
+                    <li>Чего мы не знаем?</li>
+                    <li>Какие данные нужны?</li>
+                </ul>
+
+            </div>
+
+            <div class="hat-focus">
+                <strong>Фокус:</strong> факты и данные
+            </div>
+
+        </article>
+
+
+        <article class="hat-card red-card">
+
+            <div class="hat-card-image">
+                <img src="red-hat.png" alt="Красная шляпа">
+            </div>
+
+            <h3>Красная шляпа</h3>
+            <p class="hat-role">Художник</p>
+
+            <div class="hat-card-body">
+
+                <div class="hat-mini-head">
+                    Обращаем внимание на чувства и интуицию.
+                </div>
+
+                <ul>
+                    <li>Что мы чувствуем?</li>
+                    <li>Какие есть эмоции?</li>
+                    <li>Что подсказывает интуиция?</li>
+                </ul>
+
+            </div>
+
+            <div class="hat-focus">
+                <strong>Фокус:</strong> эмоции
+            </div>
+
+        </article>
+
+
+        <article class="hat-card dark-card">
+
+            <div class="hat-card-image">
+                <img src="black-hat.png" alt="Черная шляпа">
+            </div>
+
+            <h3>Черная шляпа</h3>
+            <p class="hat-role">Критик</p>
+
+            <div class="hat-card-body">
+
+                <div class="hat-mini-head">
+                    Оцениваем риски и возможные проблемы.
+                </div>
+
+                <ul>
+                    <li>Что может пойти не так?</li>
+                    <li>Какие есть риски?</li>
+                    <li>Что может помешать?</li>
+                    <li>В чем слабые места?</li>
+                </ul>
+
+            </div>
+
+            <div class="hat-focus">
+                <strong>Фокус:</strong> риски и проблемы
+            </div>
+
+        </article>
+
+
+        <article class="hat-card yellow-card">
+
+            <div class="hat-card-image">
+                <img src="yellow-hat.png" alt="Желтая шляпа">
+            </div>
+
+            <h3>Желтая шляпа</h3>
+            <p class="hat-role">Оптимист</p>
+
+            <div class="hat-card-body">
+
+                <div class="hat-mini-head">
+                    Ищем преимущества и возможности.
+                </div>
+
+                <ul>
+                    <li>Каковы плюсы идеи?</li>
+                    <li>Какие преимущества?</li>
+                    <li>Какую ценность это принесет?</li>
+                    <li>Почему это стоит сделать?</li>
+                </ul>
+
+            </div>
+
+            <div class="hat-focus">
+                <strong>Фокус:</strong> польза и выгоды
+            </div>
+
+        </article>
+
+
+        <article class="hat-card green-card">
+
+            <div class="hat-card-image">
+                <img src="green-hat.png" alt="Зеленая шляпа">
+            </div>
+
+            <h3>Зеленая шляпа</h3>
+            <p class="hat-role">Креативщик</p>
+
+            <div class="hat-card-body">
+
+                <div class="hat-mini-head">
+                    Генерируем новые идеи и решения.
+                </div>
+
+                <ul>
+                    <li>Какие есть альтернативы?</li>
+                    <li>Что можно улучшить?</li>
+                    <li>Какие есть варианты?</li>
+                    <li>Что, если сделать иначе?</li>
+                </ul>
+
+            </div>
+
+            <div class="hat-focus">
+                <strong>Фокус:</strong> креативность
+            </div>
+
+        </article>
+
+    </div>
+
+
+    <div class="hats-results">
+
+        <div class="hats-results-main">
+
+            <div class="hats-results-icon">
+                🎯
+            </div>
+
+            <div class="hats-results-text">
+                <h3>Почему это эффективно?</h3>
+                <p>
+                    Метод помогает команде смотреть на проблему с разных сторон,
+                    избегать односторонних решений и находить более взвешенные и креативные варианты.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="hats-stats">
+
+            <div class="hat-stat">
+                <div class="hat-stat-number blue">70%</div>
+                <p>команд принимают лучшие решения</p>
+            </div>
+
+            <div class="hat-stat">
+                <div class="hat-stat-number green">60%</div>
+                <p>сотрудников отмечают рост вовлеченности</p>
+            </div>
+
+            <div class="hat-stat">
+                <div class="hat-stat-number yellow">30%</div>
+                <p>сокращается время на обсуждение</p>
+            </div>
+
+            <div class="hat-stat">
+                <div class="hat-stat-number purple">85%</div>
+                <p>участников считают метод понятным</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="hats-tip">
+        <div class="hats-tip-icon">
+            i
+        </div>
+        <div class="hats-tip-text">
+            <strong>Совет фасилитатору:</strong>
+            важно соблюдать последовательность шляп и не смешивать роли.
+            Следите за временем на каждом этапе и фиксируйте ключевые выводы.
+        </div>
+    </div>
+
+</section>
+
+
+        
+    
 
     <!-- =====================
          ИНСТРУМЕНТЫ
